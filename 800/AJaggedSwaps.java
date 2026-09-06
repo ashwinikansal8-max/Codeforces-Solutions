@@ -30,30 +30,6 @@ public class AJaggedSwaps {
             int[] arr = new int[n];
             for(int i=0;i<n;i++) arr[i]=nextInt();
              
-            int c=0;
-            
-
-            for(int i=1;i<n-1;i++){
-                if((arr[i]>arr[i-1]) && (arr[i]>arr[i+1]))
-                {
-                    int t = arr[i];
-                    arr[i]=arr[i+1];
-                    arr[i+1]=t;
-                }
-            }
-
-            for(int i=0;i<n-1;i++)
-            {
-                  if(arr[i]>arr[i+1]) {
-                    c++;
-                    break;
-                }
-                
-            }
-
-            if(c==0) System.out.println("YES");
-            else System.out.println("NO");
-        }
-
+          System.out.println(arr[0] == 1 ? "YES" : "NO");        }
     }
 }
